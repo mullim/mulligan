@@ -33,3 +33,19 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.description {
+  text-align: center;
+}
+
+#shop {
+  color: #96bf48;
+}
+
+#booz {
+  color: #01807e;
+}
+
+#caci {
+  color: #ed1c2e;
+}
