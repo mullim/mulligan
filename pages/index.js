@@ -7,7 +7,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Mike Mulligan</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
