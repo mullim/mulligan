@@ -14,7 +14,7 @@ export default function Home() {
         <Header title="Mike Mulligan" />
         <p className="description">
           Software Engineer @ <span id="shop">Shopify</span><br/>
-          Previously @ <span id="booz">Booz Allen Hamilton</span> and <span id="caci">CACI</span>
+          Previously @ <span id="deliverr">Deliverr</span>, <span id="booz">Booz Allen Hamilton</span>, and <span id="caci">CACI</span>
         </p>
       </main>
 
