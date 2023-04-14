@@ -2,6 +2,13 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1640d802-accc-4204-84e3-e715e2642804/deploy-status)](https://app.netlify.com/sites/thriving-otter-dac421/deploys)
 
+My personal site built with Next.js
+
+## Development
+
+1. Run `npm i`
+2. Run `npm run dev`
+
 ## Testing
 
 ### Included Default Testing
