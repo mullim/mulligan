@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Navbar from '@components/Navbar'
+import Head from "next/head";
+import Header from "@components/Header";
+import Navbar from "@components/Navbar";
 
 export default function Home() {
   return (
@@ -14,12 +14,16 @@ export default function Home() {
         <Header title="Mike Mulligan" />
         <Navbar />
         <p className="description">
-          Software Engineer @ Shopify<br/>
-          Previously @ Deliverr, Booz Allen Hamilton, and CACI
+          Software Engineer @ <span id="shop">Shopify</span>
+          <br />
+          Previously @ <span id="deliverr">Deliverr</span>,{" "}
+          <span id="booz">Booz Allen Hamilton</span>, and{" "}
+          <span id="caci">CACI</span>
         </p>
+        <p>I'm probably building some sort of web service.</p>
       </main>
 
-     {/*  <Footer /> */}
+      {/*  <Footer /> */}
     </div>
-  )
+  );
 }
