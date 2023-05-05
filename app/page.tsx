@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "@components/Header";
-import Navbar from "@components/Navbar";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
@@ -11,8 +11,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Mike Mulligan" />
-        <Navbar />
         <p className="description">
           Software Engineer @ <span id="shop">Shopify</span>
           <br />
@@ -20,7 +18,7 @@ export default function Home() {
           <span id="booz">Booz Allen Hamilton</span>, and{" "}
           <span id="caci">CACI</span>
         </p>
-        <p>I'm probably building some sort of web service.</p>
+        <p>I&apos;m probably building some sort of web service.</p>
       </main>
 
       {/*  <Footer /> */}
