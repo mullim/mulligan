@@ -7,12 +7,11 @@ export default function About() {
   return (
     <div className="container">
       <Head>
-        <title>Mike Mulligan</title>
+        <title>Mike Mulligan | Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>Contact</h1>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/michaelmulligan94/">

@@ -6,16 +6,13 @@ export default function About() {
   return (
     <div className="container">
       <Head>
-        <title>Mike Mulligan</title>
+        <title>Mike Mulligan | Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>About</h1>
-        <p className="description">About me...coming eventually...</p>
+        <p className="description">Blog...coming eventually...</p>
       </main>
-
-      {/*  <Footer /> */}
     </div>
   );
 }
