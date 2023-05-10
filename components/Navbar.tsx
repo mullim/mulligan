@@ -9,7 +9,7 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <div className="flex mb-4">
+    <div className="flex mb-10">
       <Header title="Mike Mulligan" />
       <ul className="list-none flex items-center p-0 m-0 ml-auto">
         {navLinks.map(({ href, label }) => (

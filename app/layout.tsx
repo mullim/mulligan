@@ -1,7 +1,8 @@
-import Header from "@/components/Header";
 import "./globals.css";
+
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,10 +28,11 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <article className="container mx-auto pt-20 pb-32 max-w-2xl">
+        <div className="container flex-row mx-auto pt-20 max-w-2xl">
           <Navbar />
           {children}
-        </article>
+          <Footer />
+        </div>
       </body>
     </html>
   );

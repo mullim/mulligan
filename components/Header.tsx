@@ -1,7 +1,13 @@
+import Link from "next/link";
+
 interface HeaderProps {
   title: string;
 }
 
 export default function Header({ title }: HeaderProps) {
-  return <h1 className="text-2xl">{title}</h1>;
+  return (
+    <Link className="text-4xl font-bold" href="/">
+      {title}
+    </Link>
+  );
 }

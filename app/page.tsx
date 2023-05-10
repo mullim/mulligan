@@ -1,3 +1,4 @@
+import "./style.css";
 import Head from "next/head";
 
 export default function Home() {
@@ -8,15 +9,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <p className="description">
-          Software Engineer @ <span id="shop">Shopify</span>
-          <br />
-          Previously @ <span id="deliverr">Deliverr</span>,{" "}
-          <span id="booz">Booz Allen Hamilton</span>, and{" "}
-          <span id="caci">CACI</span>
+      <main id="main">
+        <p className="mb-4">
+          Hey there 👋 I&apos;m Mike, a full stack developer based out of
+          Upstate New York. Throughout my career, I&apos;ve built performant
+          front-end web app&apos;s and scalable back-end services on AWS.
         </p>
-        <p>I&apos;m probably building some sort of web service.</p>
+        <p className="mb-4">
+          Currently, I work at Shopify to help merchants provide fast and
+          reliable fulfillment to their customers.
+        </p>
+        <p>Previously I worked at Deliverr, Booz Allen Hamilton, and CACI</p>
       </main>
     </div>
   );
