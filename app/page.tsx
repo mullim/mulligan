@@ -19,7 +19,7 @@ export default function Home() {
           Currently, I work at Shopify to help merchants provide fast and
           reliable fulfillment to their customers.
         </p>
-        <p>Previously I worked at Deliverr, Booz Allen Hamilton, and CACI</p>
+        <p>Previously, I worked at Deliverr, Booz Allen Hamilton, and CACI</p>
       </main>
     </div>
   );
