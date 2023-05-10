@@ -28,7 +28,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <div className="container flex-row mx-auto pt-20 max-w-2xl">
+        <div className="container flex-row px-10 md:px-0 md:mx-auto pt-20 max-w-2xl">
           <Navbar />
           {children}
           <Footer />

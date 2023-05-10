@@ -6,7 +6,7 @@ interface HeaderProps {
 
 export default function Header({ title }: HeaderProps) {
   return (
-    <Link className="text-4xl font-bold" href="/">
+    <Link className="text-4xl font-bold text-center md:text-left" href="/">
       {title}
     </Link>
   );
