@@ -1,0 +1,7 @@
+.nav-link {
+  @apply mx-2 text-xl border-b-2 border-transparent hover:border-amber-300;
+}
+
+.nav-link-active {
+  @apply mx-2 text-xl border-b-2 border-amber-300;
+}

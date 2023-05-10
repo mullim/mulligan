@@ -10,12 +10,12 @@ export default function Home() {
       </Head>
 
       <main id="main">
-        <p className="mb-4">
+        <p>
           Hey there 👋 I&apos;m Mike, a full stack developer based out of
           Upstate New York. Throughout my career, I&apos;ve built performant
           front-end web app&apos;s and scalable back-end services on AWS.
         </p>
-        <p className="mb-4">
+        <p>
           Currently, I work at Shopify to help merchants provide fast and
           reliable fulfillment to their customers.
         </p>
