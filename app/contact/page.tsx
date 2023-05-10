@@ -13,8 +13,6 @@ export default function About() {
 
       <main>
         <h1>Contact</h1>
-        {/* <ContactForm /> */}
-        <p>You can get in touch with me via Linkedin</p>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/michaelmulligan94/">
