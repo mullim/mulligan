@@ -3,7 +3,9 @@ import prisma from "../lib/prisma";
 async function main() {
   const response = await Promise.all([
     await prisma.posts.upsert({
-      where: {},
+      where: {
+        slug: "blog-post-1",
+      },
       update: {},
       create: {
         title: "Blog Post 1",
