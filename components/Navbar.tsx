@@ -2,8 +2,10 @@
 import Link from "next/link";
 import Header from "./Header";
 import { usePathname } from "next/navigation";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 
 import "./navbar.css";
+import ThemeSwitch from "./ThemeSwitch";
 
 const navLinks = [
   { href: "/blog", label: "Blog" },
