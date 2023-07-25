@@ -1,9 +1,6 @@
 import Head from "next/head";
-import { sql } from "@vercel/postgres";
 
 export default async function About() {
-  const { rows } = await sql`SELECT * from posts`;
-  console.log(rows);
   return (
     <div className="container">
       <Head>
