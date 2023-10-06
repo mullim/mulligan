@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "./header.css";
 
 interface HeaderProps {
   title: string;
@@ -11,6 +12,7 @@ export default function Header({ title }: HeaderProps) {
       href="/"
     >
       {title}
+      <span id="period">.</span>
     </Link>
   );
 }

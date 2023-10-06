@@ -14,7 +14,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col md:flex-row mb-10 view border-b-4 pb-8 border-black">
+    <div
+      id="nav-bar"
+      className="flex flex-col md:flex-row mb-10 view border-b-4 pb-8"
+    >
       <Header title="Mike Mulligan" />
       <ul className="list-none flex items-end m-auto md:m-0 md:ml-auto">
         {navLinks.map(({ href, label }) => (

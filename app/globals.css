@@ -29,6 +29,8 @@ body {
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
   /* @apply bg-emerald-200; */
+  background-color: #282a36;
+  color: #f8f8f2;
 }
 b,
 strong,
@@ -43,4 +45,8 @@ h1 {
 }
 h2 {
   font-variation-settings: "wght" 750;
+}
+
+::selection {
+  background: #44475a;
 }

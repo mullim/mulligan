@@ -1,7 +1,16 @@
+#nav-bar {
+  border-color: #ff79c6;
+}
+
 .nav-link {
-  @apply mx-2 text-xl border-b-2 border-transparent hover:border-amber-300;
+  @apply mx-2 text-xl border-b-2 border-transparent;
+}
+
+.nav-link:hover {
+  border-color: #8be9fd;
 }
 
 .nav-link-active {
-  @apply mx-2 text-xl border-b-2 border-amber-300;
+  border-color: #8be9fd;
+  @apply mx-2 text-xl border-b-2;
 }
