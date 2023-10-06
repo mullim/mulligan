@@ -1,5 +1,5 @@
 #nav-bar {
-  border-color: #ff79c6;
+  border-color: #44475a;
 }
 
 .nav-link {
@@ -7,10 +7,10 @@
 }
 
 .nav-link:hover {
-  border-color: #8be9fd;
+  border-color: #ff79c6;
 }
 
 .nav-link-active {
-  border-color: #8be9fd;
+  border-color: #ff79c6;
   @apply mx-2 text-xl border-b-2;
 }
