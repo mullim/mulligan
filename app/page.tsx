@@ -1,5 +1,4 @@
 import Head from "next/head";
-import "./style.css";
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main id="main">
+      <main id="main" className="[&>p]:mb-4">
         <p>
           Hey there 👋 I&apos;m Mike, a full stack developer based out of
           Upstate New York. Throughout my career, I&apos;ve built performant

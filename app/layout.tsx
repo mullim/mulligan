@@ -1,8 +1,10 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { Inter } from "next/font/google";
+import { Container } from "../components/Container";
+import { ThemeProvider } from "../components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="preload"
@@ -27,12 +29,16 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={inter.className}>
-        <div className="container flex-row px-10 md:px-0 md:mx-auto pt-20 max-w-2xl">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+      <body
+        className={`bg-dracula-foreground dark:bg-dracula-background selection:bg-dracula-yellow dark:selection:bg-dracula-current-line ${inter.className}`}
+      >
+        <ThemeProvider attribute="class">
+          <Container>
+            <Navbar />
+            {children}
+            <Footer />
+          </Container>
+        </ThemeProvider>
       </body>
     </html>
   );
