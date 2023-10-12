@@ -10,7 +10,7 @@ export default function About() {
       </Head>
 
       <main>
-        <ul>
+        <ul className="[&>li:last-child]:mb-4">
           <li>
             <a href="https://www.linkedin.com/in/michaelmulligan94/">
               Linkedin

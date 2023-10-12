@@ -9,7 +9,7 @@ export default async function About() {
       </Head>
 
       <main>
-        <p className="description">Blog...coming eventually...</p>
+        <p className="mb-4">Blog...coming eventually...</p>
       </main>
     </div>
   );
