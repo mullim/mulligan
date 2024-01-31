@@ -1,6 +1,5 @@
 import "./globals.css";
 
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Inter } from "next/font/google";
 import { Container } from "../components/Container";
@@ -10,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Mike Mulligan",
-  description: "Software Engineer @ Shopify",
+  description: "Senior Software Engineer @ Flexport",
 };
 
 export default function RootLayout({
@@ -20,23 +19,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </head>
+      <head></head>
       <body
-        className={`bg-dracula-foreground dark:bg-dracula-background selection:bg-dracula-yellow dark:selection:bg-dracula-current-line ${inter.className}`}
+        className={`h-full bg-dracula-foreground dark:bg-dracula-background selection:bg-dracula-yellow dark:selection:bg-dracula-current-line ${inter.className}`}
       >
         <ThemeProvider attribute="class">
           <Container>
             <Navbar />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </Container>
         </ThemeProvider>
       </body>
