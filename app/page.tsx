@@ -47,8 +47,7 @@ export default function Home() {
         <Image
           src={mike}
           alt="Mike Mulligan"
-          width={350}
-          placeholder="blur"
+          width={375}
           className="rounded-lg mx-auto mb-8 md:ml-8 md:mb-0 w-1/2 md:w-full"
         />
       </main>
