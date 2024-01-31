@@ -48,7 +48,7 @@ export default function Home() {
           src={mike}
           alt="Mike Mulligan"
           width={375}
-          className="rounded-lg mx-auto mb-8 md:ml-8 md:mb-0 w-1/2 md:w-full"
+          className="rounded-lg mx-auto mb-8 md:ml-8 md:mb-0 w-3/4 sm:w-1/2 md:w-full"
         />
       </main>
     </div>
