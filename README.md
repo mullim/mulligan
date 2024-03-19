@@ -1,8 +1,14 @@
-# Mulligan.tech
+# mulligan.tech
 
 ![Vercel](https://vercelbadge.vercel.app/api/mullim/mulligan)
 
-My personal site built with Next.js and deployed on Vercel.
+My personal site deployed to Vercel.
+
+## Tech
+
+- TypeScript
+- Next.js
+- Tailwind
 
 ## Development
 
