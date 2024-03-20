@@ -12,12 +12,22 @@ export default function About() {
       <main>
         <ul className="[&>li:last-child]:mb-4">
           <li>
-            <a href="https://www.linkedin.com/in/michaelmulligan94/">
+            <a
+              href="https://www.linkedin.com/in/michaelmulligan94/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Linkedin
             </a>
           </li>
           <li>
-            <a href="https://github.com/mullim">Github</a>
+            <a
+              href="https://github.com/mullim"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
           </li>
         </ul>
       </main>
