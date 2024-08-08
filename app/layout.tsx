@@ -1,9 +1,9 @@
-import "./globals.css";
-
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import { Container } from "../components/Container";
 import { ThemeProvider } from "../components/ThemeProvider";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +30,7 @@ export default function RootLayout({
             {/* <Footer /> */}
           </Container>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
