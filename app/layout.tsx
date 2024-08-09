@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 import { Container } from "../components/Container";
 import { ThemeProvider } from "../components/ThemeProvider";
@@ -31,6 +32,7 @@ export default function RootLayout({
           </Container>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
