@@ -6,7 +6,7 @@ import Header from "./Header";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
-  { href: "/blog", label: "Blog" },
+  // { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
