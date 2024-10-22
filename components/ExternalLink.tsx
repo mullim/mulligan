@@ -7,7 +7,7 @@ interface ExternalLinkProps {
 
 const ExternalLink: React.FC<ExternalLinkProps> = ({ url, children }) => (
   <a
-    className="font-semibold underline"
+    className="font-semibold underline hover:underline-offset-4"
     href={url}
     rel="nofollow"
     target="_blank"

@@ -10,28 +10,23 @@ export default function About() {
       </Head>
 
       <main>
-        <ul className="[&>li:last-child]:mb-4">
-          <li>
+        <article className="[&>p]:mb-6 [&>p]:leading-8">
+          <h1 className="text-2xl font-bold mb-6 text-center md:text-left">
+            Contact
+          </h1>
+          <p className="text-center md:text-left">
+            Get in touch by sending me a message on{" "}
             <a
               href="https://www.linkedin.com/in/michaelmulligan94/"
               target="_blank"
               rel="noopener noreferrer"
+              className="underline hover:underline-offset-4"
             >
               Linkedin
             </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/mullim"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </li>
-        </ul>
+          </p>
+        </article>
       </main>
-
       {/*  <Footer /> */}
     </div>
   );

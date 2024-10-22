@@ -14,7 +14,7 @@ export default function Home() {
 
       <main id="main" className="flex flex-col-reverse md:flex-row">
         <article className="[&>p]:mb-6 [&>p]:leading-8">
-          <h2 className="text-2xl font-bold mb-6 text-center md:text-left ">
+          <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
             Hi, I&apos;m Mike.
           </h2>
           <p>
