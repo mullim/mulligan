@@ -4,6 +4,12 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 import { Container } from "../components/Container";
 import { ThemeProvider } from "../components/ThemeProvider";
+import Footer from "@/components/Footer";
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +34,7 @@ export default function RootLayout({
           <Container>
             <Navbar />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </Container>
         </ThemeProvider>
         <Analytics />

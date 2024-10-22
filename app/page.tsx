@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import mike from "../public/mike.jpg";
+import mike from "../public/mike2.jpg";
 
 import ExternalLink from "../components/ExternalLink";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="w-full">
       <Head>
         <title>Mike Mulligan</title>
         <link rel="icon" href="/favicon.ico" />
@@ -47,7 +47,7 @@ export default function Home() {
         <Image
           src={mike}
           alt="Mike Mulligan"
-          width={375}
+          width={350}
           className="rounded-lg mx-auto mb-8 md:ml-8 md:mb-0 w-3/4 sm:w-1/2 md:w-full"
         />
       </main>
