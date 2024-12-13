@@ -11,10 +11,10 @@ export default function Footer() {
 
   return (
     <footer className="flex flex-col text-center md:flex-row md:my-10 md:text-left">
-      <span>
+      <span className="text-content">
         <time>{year}</time> © Mike Mulligan.
       </span>
-      <span className="my-2 md:my-0 md:ml-auto">
+      <span className="my-2 md:my-0 md:ml-auto text-content">
         <a
           href="https://www.github.com/mullim"
           target="_blank"
