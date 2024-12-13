@@ -3,6 +3,7 @@ import Image from "next/image";
 import mike from "../public/mike2.jpg";
 
 import ExternalLink from "../components/ExternalLink";
+import { SpinningDonut } from "@/components/SpinningDonut";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main id="main" className="flex flex-col-reverse md:flex-row">
-        <article className="[&>p]:mb-6 [&>p]:leading-8">
+        <article className="[&>p]:mb-6 [&>p]:leading-8 p-2 text-content">
           <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
             Hi, I&apos;m Mike.
           </h2>
@@ -44,12 +45,13 @@ export default function Home() {
             .
           </p>
         </article>
-        <Image
+        {/* <Image
           src={mike}
           alt="Mike Mulligan"
           width={350}
           className="rounded-lg mx-auto mb-8 md:ml-8 md:mb-0 w-3/4 sm:w-1/2 md:w-full"
-        />
+        /> */}
+        <SpinningDonut />
       </main>
     </div>
   );
