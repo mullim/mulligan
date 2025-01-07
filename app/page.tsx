@@ -1,57 +1,67 @@
 import Head from "next/head";
 import Image from "next/image";
-import mike from "../public/mike2.jpg";
-
 import ExternalLink from "../components/ExternalLink";
-import { SpinningDonut } from "@/components/SpinningDonut";
+
+import books from "../public/books.png";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full max-w-3xl">
       <Head>
         <title>Mike Mulligan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main id="main" className="flex flex-col-reverse md:flex-row">
-        <article className="[&>p]:mb-6 [&>p]:leading-8 p-2 text-content">
-          <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
-            Hi, I&apos;m Mike.
-          </h2>
-          <p>
-            I&apos;m a software engineer from{" "}
-            <ExternalLink url="https://en.wikipedia.org/wiki/Upstate_New_York">
-              Upstate, New York
-            </ExternalLink>
-            . Right now, I work as a{" "}
-            <ExternalLink url="https://www.flexport.com">
-              senior software engineer at Flexport
-            </ExternalLink>
-            . I&apos;ve spent my career crafting performant front-end web apps
-            and scalable back-end services - you know, making the digital world
-            work seamlessly.
-          </p>
-          <p>
-            Prior to{" "}
-            <ExternalLink url="https://www.flexport.com">Flexport</ExternalLink>
-            , I was a front-end engineer at{" "}
-            <ExternalLink url="https://www.shopify.com">Shopify</ExternalLink>{" "}
-            and{" "}
-            <ExternalLink url="https://www.deliverr.com">Deliverr</ExternalLink>
-            . And before that, I was a lead engineer at{" "}
-            <ExternalLink url="https://www.boozallen.com">
-              Booz Allen Hamilton
-            </ExternalLink>
-            .
-          </p>
-        </article>
-        {/* <Image
-          src={mike}
-          alt="Mike Mulligan"
-          width={350}
-          className="rounded-lg mx-auto mb-8 md:ml-8 md:mb-0 w-3/4 sm:w-1/2 md:w-full"
-        /> */}
-        <SpinningDonut />
+      <main id="main" className="flex flex-col">
+        <h2 className="mb-1 text-lg font-medium">Hi, I&apos;m Mike.</h2>
+        <div className="mb-3 flex flex-wrap gap-1 text-xs text-gray-600">
+          <div className="flex gap-1">
+            <div>Github:</div>
+            <div>
+              <ExternalLink href="https://github.com/mullim">
+                @mullim
+              </ExternalLink>
+            </div>
+          </div>
+          <div className="flex gap-1">
+            <div>Twitter: </div>
+            <div>
+              <ExternalLink href="https://x.com/mulligandev">
+                @mulligandev
+              </ExternalLink>
+            </div>
+          </div>
+          <div className="flex gap-1">
+            <div>Email:</div>
+            <div>
+              <ExternalLink href="mailto:mkmllgn@gmail.com">
+                mkmllgn[at]gmail[dot]com
+              </ExternalLink>
+            </div>
+          </div>
+        </div>
+        <p className="mb-2 text-xs text-gray-600">
+          I&apos;m a Software Engineer from Upstate, New York. Right now, I work
+          as a Senior Software Engineer at{" "}
+          <ExternalLink href="https://www.flexport.com">Flexport</ExternalLink>.
+          I&apos;ve spent my career crafting performant front-end web apps and
+          scalable back-end systems. Before Flexport, I was a Frontend Engineer
+          at <ExternalLink href="https://www.shopify.com">Shopify</ExternalLink>{" "}
+          and{" "}
+          <ExternalLink href="https://www.deliverr.com">Deliverr</ExternalLink>.
+          Earlier in my career, I built software for the Air Force Research
+          Laboratory at{" "}
+          <ExternalLink href="https://www.boozallen.com">
+            Booz Allen Hamilton
+          </ExternalLink>{" "}
+          and <ExternalLink href="https://www.caci.com">CACI</ExternalLink>.
+        </p>
+        <div className="mt-8">
+          <Image
+            src={books}
+            alt="Infinite Books"
+            className="w-full mx-auto rounded-lg bg-cover object-cover"
+          />
+        </div>
       </main>
     </div>
   );

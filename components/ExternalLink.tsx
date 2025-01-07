@@ -1,14 +1,14 @@
 import React from "react";
 
 interface ExternalLinkProps {
-  url: string;
+  href: string;
   children: React.ReactNode;
 }
 
-const ExternalLink: React.FC<ExternalLinkProps> = ({ url, children }) => (
+const ExternalLink: React.FC<ExternalLinkProps> = ({ href, children }) => (
   <a
-    className="font-semibold underline hover:underline-offset-4"
-    href={url}
+    className="text-gray-500 transition hover:text-gray-900 underline"
+    href={href}
     rel="nofollow"
     target="_blank"
   >

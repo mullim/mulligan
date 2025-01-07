@@ -2,7 +2,7 @@
 
 export function Container({ children }: { children: React.ReactNode }) {
   return (
-    <div className="container flex-row px-10 md:pt-14 mx-auto pt-8 max-w-4xl ">
+    <div className="flex justify-center px-3.5 pb-20 pt-10">
       {children}
     </div>
   );
