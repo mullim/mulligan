@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import ExternalLink from "../components/ExternalLink";
+import SocialLink from "../components/SocialLink";
 
 import books from "../public/books.png";
 
@@ -14,30 +15,26 @@ export default function Home() {
       <main id="main" className="flex flex-col">
         <h2 className="mb-1 text-lg font-medium">Hi, I&apos;m Mike.</h2>
         <div className="mb-3 flex flex-wrap gap-1 text-xs text-gray-600">
-          <div className="flex gap-1">
-            <div>Github:</div>
-            <div>
-              <ExternalLink href="https://github.com/mullim">
-                @mullim
-              </ExternalLink>
-            </div>
-          </div>
-          <div className="flex gap-1">
-            <div>Twitter: </div>
-            <div>
-              <ExternalLink href="https://x.com/mulligandev">
-                @mulligandev
-              </ExternalLink>
-            </div>
-          </div>
-          <div className="flex gap-1">
-            <div>Email:</div>
-            <div>
-              <ExternalLink href="mailto:mkmllgn@gmail.com">
-                mkmllgn[at]gmail[dot]com
-              </ExternalLink>
-            </div>
-          </div>
+          <SocialLink
+            label="Github"
+            href="https://github.com/mullim"
+            username="@mullim"
+          />
+          <SocialLink
+            label="LinkedIn"
+            href="https://www.linkedin.com/in/michaelmulligan94/"
+            username="@michaelmulligan94"
+          />
+          <SocialLink
+            label="Twitter"
+            href="https://x.com/mulligandev"
+            username="@mulligandev"
+          />
+          <SocialLink
+            label="Email"
+            href="mailto:mkmllgn@gmail.com"
+            username="mkmllgn[at]gmail[dot]com"
+          />
         </div>
         <p className="mb-2 text-xs text-gray-600">
           I&apos;m a Software Engineer from Upstate, New York. Right now, I work
