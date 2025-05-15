@@ -17,7 +17,7 @@ export default function About() {
           <p className="text-center md:text-left">
             Get in touch by sending me a message on{" "}
             <a
-              href="https://www.linkedin.com/in/michaelmulligan94/"
+              href="https://www.linkedin.com/in/mullim"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:underline-offset-4"

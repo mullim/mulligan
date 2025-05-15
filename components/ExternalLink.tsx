@@ -3,17 +3,22 @@
 interface ExternalLinkProps {
   href: string;
   children: React.ReactNode;
+  className?: string;
 }
 
-const ExternalLink: React.FC<ExternalLinkProps> = ({ href, children }) => (
-  <a
-    className="text-gray-500 transition hover:text-gray-900 underline"
-    href={href}
-    rel="nofollow"
-    target="_blank"
-  >
-    {children}
-  </a>
-);
-
-export default ExternalLink;
+export default function ExternalLink({
+  href,
+  children,
+  className,
+}: ExternalLinkProps) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      {children}
+    </a>
+  );
+}

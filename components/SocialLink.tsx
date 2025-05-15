@@ -2,19 +2,31 @@
 
 import ExternalLink from "./ExternalLink";
 
-type SocialLinkProps = {
+interface SocialLinkProps {
   label: string;
   href: string;
   username: string;
-};
+  className?: string;
+  icon?: React.ReactNode;
+}
 
-export default function SocialLink({ label, href, username }: SocialLinkProps) {
+export default function SocialLink({
+  label,
+  href,
+  username,
+  className,
+  icon,
+}: SocialLinkProps) {
   return (
-    <div className="flex gap-1">
-      <div>{label}:</div>
-      <div>
-        <ExternalLink href={href}>{username}</ExternalLink>
-      </div>
-    </div>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+      aria-label={`${label} profile - ${username}`}
+    >
+      {icon}
+      {username}
+    </a>
   );
 }

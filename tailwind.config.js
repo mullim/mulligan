@@ -4,17 +4,52 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dracula-background": "#282a36",
-        "dracula-foreground": "#f8f8f2",
-        "dracula-current-line": "#44475A",
-        "dracula-comment": "#6272A4",
-        "dracula-cyan": "#8BE9FD",
-        "dracula-green": "#50FA7B",
-        "dracula-orange": "#FFB86C",
-        "dracula-pink": "#FF79C6",
-        "dracula-purple": "#BD93F9",
-        "dracula-red": "#FF5555",
-        "dracula-yellow": "#F1FA8C",
+        background: {
+          light: "#FAFAFA",
+          dark: "#0F172A",
+        },
+        surface: {
+          light: "#FFFFFF",
+          dark: "#1E293B",
+        },
+        primary: {
+          light: "#1A1A1A",
+          dark: "#F8FAFC",
+        },
+        secondary: {
+          light: "#555555",
+          dark: "#94A3B8",
+        },
+        accent: {
+          light: "#D97706",
+          dark: "#FBBF24",
+          hover: {
+            light: "#B45309",
+            dark: "#F59E0B",
+          },
+        },
+        border: {
+          light: "#E5E7EB",
+          dark: "#334155",
+        },
+        highlight: {
+          light: "#FEF3C7",
+          dark: "#FDE68A",
+        },
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "65ch",
+            color: "rgb(var(--tw-prose-body))",
+            a: {
+              color: "rgb(var(--tw-prose-links))",
+              "&:hover": {
+                color: "rgb(var(--tw-prose-links-hover))",
+              },
+            },
+          },
+        },
       },
     },
   },
@@ -23,5 +58,5 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

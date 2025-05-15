@@ -2,7 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-primary-light dark:text-primary-dark antialiased;
+  }
+
+  /* Improved link accessibility */
+  a:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-light dark:outline-accent-dark rounded;
+  }
+
+  /* Better heading hierarchy */
+  h1 {
+    @apply text-4xl md:text-5xl font-bold text-primary-light dark:text-primary-dark;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold text-primary-light dark:text-primary-dark;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold text-primary-light dark:text-primary-dark;
+  }
+}
+
+@layer components {
+  /* Enhanced prose styles for blog content */
+  .prose {
+    @apply prose-base md:prose-lg;
+    @apply prose-headings:font-semibold prose-headings:tracking-tight;
+    @apply prose-headings:text-primary-light dark:prose-headings:text-primary-dark;
+    @apply prose-a:text-accent-light dark:prose-a:text-accent-dark hover:prose-a:text-accent-hover-light dark:hover:prose-a:text-accent-hover-dark prose-a:no-underline hover:prose-a:underline;
+    @apply prose-strong:text-primary-light dark:prose-strong:text-primary-dark prose-strong:font-semibold;
+    @apply prose-code:text-primary-light dark:prose-code:text-primary-dark prose-code:bg-surface-light dark:prose-code:bg-surface-dark prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md;
+    @apply prose-pre:bg-surface-light dark:prose-pre:bg-surface-dark prose-pre:shadow-lg;
+    @apply prose-img:rounded-lg prose-img:shadow-md;
+    @apply prose-blockquote:border-l-4 prose-blockquote:border-accent-light dark:prose-blockquote:border-accent-dark prose-blockquote:text-secondary-light dark:prose-blockquote:text-secondary-dark prose-blockquote:font-normal;
+  }
+
+  /* Improved container width */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* System font stack */
 html {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
